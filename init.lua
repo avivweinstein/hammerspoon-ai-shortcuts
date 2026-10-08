@@ -37,14 +37,6 @@ hs.hotkey.bind({"ralt"}, "/", function()
   end)
 end)
 
--- Rephrase selected text
--- Trigger: Right Opt + .
-hs.hotkey.bind({"ralt"}, ".", function()
-  aiAction("Rephrase", function(text)
-    return "Rephrase the following text in a clean, concise, and professional tone. Keep all the same arguments and ideas, fix any spelling and grammar issues, and do not make it longer than the original:\n\n" .. text
-  end)
-end)
-
 -- Reply to selected text/conversation
 -- Trigger: Right Opt + ,
 hs.hotkey.bind({"ralt"}, ",", function()
